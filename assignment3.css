@@ -1,1 +1,31 @@
 /*styles for assignment 3*/
+h1, h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+
+div {
+  background-color: beige;
+  border-width: 1px;
+  border-color: white;
+  border-style: dotted;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+body {
+  background-color: #3366ff
+}

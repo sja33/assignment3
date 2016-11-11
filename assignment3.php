@@ -11,7 +11,7 @@ include("ChildClass.php");
 	<link rel="stylesheet" href="assignment3.css">
 </head>
 <body>
-	<section>
+	<div>
 		<h1>So the other day...</h1>
 		<h3>or</h3>
 		<h2>When I tried to buy a pet</h2>
@@ -31,18 +31,18 @@ include("ChildClass.php");
 		<p>"Sparky," said the man.</p>
 		<p>"I'll take him!" I shouted.</p>
 		<?=  $pet2 = new Dog("Sparky", "Labrador Retriever", "6")?>
-		<p>"Speak,"" I told him. And he dutifully obliged.</p>
+		<p>"Speak," I told him. And he dutifully obliged.</p>
 		<p><?= $pet2->speak() ?></p>
 		<p>On the way home, we met another man walking a dog. "Who is this?" I asked</p>
 		<p>"This is Spot" said the man.</p>
 		<?=  $otherDog = new Dog("Spot", "Labrador Retriever", "2")?>
-		<p>"This is <?= $pet1->getName() ?>." I told him"</p>
+		<p>"This is <?= $pet2->getName() ?>." I told him"</p>
 		<p>And funnily enough, we each liked the names of the others dog so much that we decided to switch them.</p>
-		<?= $pet2->setName(pet2->swapName("Sparky"));?>
-		<p>Things went great with <?= $pet2->getName() ?> for a while, but that didn't last long.</p>
+		<?= $pet2->setName($pet2->swapName("Sparky"));?>
+		<p>Things went great with <?= $pet2->getName() ?> (or the artist formerly known as <?= $otherDog->getName() ?>) for a while, but that didn't last long.</p>
 		<p>He was <?= $pet2->getQual1() ?> which I liked, but was <?= $pet2->getQual2() ?> which I didn't like.</p>
 		<p>So ... I decided to release him and set him free.</p>
-		<p> I attached a note to him that said ""<?= $pet2 ?>, you may keep him." and I set him free to roam the earth.</p>
-	</section?
+		<p> I attached a note to him that said <?= $pet2 ?>, you may keep him." and I set him free to roam the earth.</p>
+	</div?
 </body>
 </html>

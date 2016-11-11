@@ -19,7 +19,7 @@ include("ChildClass.php");
 		<p>I headed over to the pet store, not knowing what kind of pet i wanted</p>
 		<p>"What do you recommend?" I asked the man in charge"</p>
 		<p>"I have just the pet for you." The man said"</p>
-		<?= $pet1 = new Pet(); ?>
+		<?= $pet1=new Pet(); ?>
 		<p>It is a <?= $pet1->getSpecies() ?>. It's name is <?= $pet1->getName() ?>.</p>
 		<p>"I'll take it!" I called out excited and not thinking at all.</p>
 		<p>Things went great with <?= $pet1->getName() ?> at first, but that didn't last long.</p>

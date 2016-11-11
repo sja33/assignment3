@@ -40,6 +40,6 @@
       return $oldName;
     }
     public function __toString() {
- 		   return "<p>This is " . $this->getName() . ".\n\t He is " . $this->getQual1()."\n\t and he is ".$this->getQual2().".</p>";
+ 		   return "<p>This is " . $this->getName() . ". He is " . $this->getQual1()." and he is ".$this->getQual2().".</p>";
  	   }
 	}

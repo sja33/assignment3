@@ -25,6 +25,6 @@
 		}
 
 		public function __toString() {
- 		   return "This is " . $this->getName() . ".\n\t He is " . $this->getQual1()."\n\t and he is ".$this->getQual2().".";
+ 		   return "<p>This is " . $this->getName() . ". He is " . $this->getQual1()." and he is ".$this->getQual2().".";
  	   }
 	}
